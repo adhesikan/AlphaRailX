@@ -48,7 +48,7 @@ export default function HomePage() {
                   "Operational readiness: monitoring, alerts, incident playbooks"
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 text-slate-900" />
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 text-primary" />
                     <span>{item}</span>
                   </li>
                 ))
@@ -71,25 +71,25 @@ export default function HomePage() {
               </div>
               <div className="grid gap-4 sm:grid-cols-2">
                 <div className="rounded-2xl bg-white/10 p-4">
-                  <ShieldCheck className="h-6 w-6" />
+                  <ShieldCheck className="h-6 w-6 text-primary" />
                   <p className="mt-3 text-sm text-slate-200">
                     Policy-controlled execution with human-in-the-loop approvals.
                   </p>
                 </div>
                 <div className="rounded-2xl bg-white/10 p-4">
-                  <LineChart className="h-6 w-6" />
+                  <LineChart className="h-6 w-6 text-primary" />
                   <p className="mt-3 text-sm text-slate-200">
                     Performance, cost, and risk metrics tied to every deployment.
                   </p>
                 </div>
                 <div className="rounded-2xl bg-white/10 p-4">
-                  <Lock className="h-6 w-6" />
+                  <Lock className="h-6 w-6 text-primary" />
                   <p className="mt-3 text-sm text-slate-200">
                     Secure data handling, encryption, and least-privilege access.
                   </p>
                 </div>
                 <div className="rounded-2xl bg-white/10 p-4">
-                  <Settings className="h-6 w-6" />
+                  <Settings className="h-6 w-6 text-primary" />
                   <p className="mt-3 text-sm text-slate-200">
                     AI Ops playbooks that keep models reliable and compliant.
                   </p>
@@ -174,7 +174,7 @@ export default function HomePage() {
             ].map(({ title, description, icon: Icon }) => (
               <Card key={title}>
                 <CardHeader>
-                  <Icon className="h-6 w-6 text-slate-900" />
+                  <Icon className="h-6 w-6 text-primary" />
                   <CardTitle className="mt-4">{title}</CardTitle>
                 </CardHeader>
                 <CardContent className="text-sm text-muted-foreground">{description}</CardContent>
@@ -315,7 +315,7 @@ export default function HomePage() {
               "Vendor/model policy and evaluation"
             ].map((item) => (
               <div key={item} className="flex items-start gap-3 rounded-2xl border bg-white p-4">
-                <ShieldCheck className="h-5 w-5 text-slate-900" />
+                <ShieldCheck className="h-5 w-5 text-primary" />
                 <p className="text-sm text-muted-foreground">{item}</p>
               </div>
             ))}
