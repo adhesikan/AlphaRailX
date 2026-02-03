@@ -27,11 +27,11 @@ export function CTASection({
           <p className="mt-4 text-base text-slate-300 sm:text-lg">{description}</p>
         </div>
         <div className="flex flex-col gap-3 sm:flex-row md:justify-end">
-          <Button className="bg-white text-slate-900 hover:bg-slate-100" asChild>
+          <Button asChild>
             <Link href={primaryHref}>{primaryLabel}</Link>
           </Button>
           {secondaryLabel ? (
-            <Button variant="outline" className="border-white text-white hover:bg-white/10" asChild>
+            <Button variant="outline" asChild>
               <Link href={secondaryHref}>{secondaryLabel}</Link>
             </Button>
           ) : null}
