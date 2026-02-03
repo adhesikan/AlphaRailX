@@ -13,7 +13,7 @@ export function Footer() {
               investment advice, brokerage services, or trade recommendations.
             </p>
             <p className="mt-4 text-sm text-slate-300">
-              200 Park Avenue, New York, NY (placeholder) · hello@alpharailx.com
+              Shrewsbury, MA · hello@alpharailx.com
             </p>
           </div>
           <div className="grid gap-2 text-sm text-slate-300 md:justify-end">
