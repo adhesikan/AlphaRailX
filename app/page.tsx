@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -112,7 +111,7 @@ export default function HomePage() {
               "/logos/logo-5.svg"
             ].map((src) => (
               <div key={src} className="flex items-center justify-center">
-                <Image src={src} alt="Logo placeholder" width={120} height={32} />
+                <img src={src} alt="Logo placeholder" width={120} height={32} className="h-8 w-auto" />
               </div>
             ))}
           </div>
